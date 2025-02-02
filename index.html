@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><!--language is english-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">MyBookShelf</div>   <!--class assigned in order to apply css and if wanted js. -->
+        <ul class="nav-links"> <!--ul stands for unordered list8 -->
+            <li><a href="#home">Home</a></li>  <!--inside list tag the anchor tag is being used.-->
+            <li><a href="#featured">Features</a></li>  <!--# is used so that the link opens on the same page, --> 
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+    <!-- Dummy sections -->
+    <section id="home" >
+        <h2>
+            Home Section
+        </h2>
+        <h3>Welcome To MyBookShelf:</h3>
+        <h3> Gateway To Great Reads! </h3>
+        <img src="image.png" alt="Library Image">
+        <br>
+        <p class ="important">This is where you will find the books of most of the catogories wether it be fiction,non-fiction,science-fiction and much more.</p>
+        <p class="quote">"A room without books is like a body without a soul." - Marcus Tullius Cicero </p>
+        <a href="#featured">Browse Books</a>
+    </section>
+    <section id="featured">
+        <h2>Featured Section
+        </h2>
+        <h3>Check Out What"s Popular This Week!</h3>
+        <br>
+        <table border="1">
+            <tr>
+                <th>To Kill A Mocking Bird</th>
+                <th>Jan Eyre</th>
+                <th>Moby-Dick</th>
+                <th>The Great Gatsby</th>
+            </tr>
+            <tr>
+                <td><img src="book 1.png" height="170" alt="To Kill A Mocking Bird image"></td>
+                <td><img src="book 2.png" height="170" alt="Jan Eyre image"></td>
+                <td><img src="book 3.png" height="170" alt="Moby-Dick image"></td>
+                <td><img src="book 4.png" height="170" alt="The Great Gatsby image"></td>
+            </tr>
+            <tr>
+                <td>Harper Lee</td>
+                <td>Charlotte Brontë</td>
+                <td>Herman Melville</td>
+                <td>F.Scott Fitzgerald</td>
+            </tr>
+            <tr>
+                <td>"A young girl named Scout learns about racism and injustice in the American South as she witnesses her father, Atticus Finch, defend a wrongly accused Black man in a racially charged trial</td>
+                <td>Jane Eyre is a first-person narrative told from the perspective of Jane, a seemingly 'plain' girl who meets a lot of challenges in life. The novel presents Jane's life from childhood to adulthood.</td>
+                <td>"The Great Gatsby" is a novel about a mysterious millionaire, Jay Gatsby, who throws lavish parties in the 1920s while desperately trying to rekindle a past love with a wealthy woman named Daisy Buchanan, as narrated by Nick Carraway, his neighbor. </td>
+                <td>A sailor named Ishmael joins a whaling ship captained by the vengeful Ahab, who is obsessed with hunting down a giant white whale called Moby Dick, leading to a destructive quest across the ocean fueled by madness and obsession. </td>
+            </tr>
+        </table>
+    </section>
+    <section id="categories">
+        <h2>Browse by Genre</h2>
+    
+        <div class="categories-container">
+            <div class="category-item">
+                <img src="fiction-icon.png" alt="Fiction">
+                <p>Fiction</p>
+            </div>
+            <div class="category-item">
+                <img src="Non-fiction-icon.png" alt="Non-fiction">
+                <p>Mystery</p>
+            </div>
+            <div class="category-item">
+                <img src="sci-fi-icon.png" alt="Sci-Fi">
+                <p>Sci-Fi</p>
+            </div>
+            <div class="category-item">
+                <img src="romance-icon.png" alt="Romance">
+                <p>Romance</p>
+            </div>
+        </div>
+        </section>
+    <section id="reviews"> 
+
+    <h2>What Readers Say</h2>
+
+<div class="reviews-container">
+    <div class="review-box">
+        <strong>Rohit</strong>
+        <p>"Such a great read! Couldn't put it down."</p>
+    </div>
+    <div class="review-box">
+        <strong>Naman</strong>
+        <p>"Really well-written, I highly recommend it!"</p>
+    </div>
+    <div class="review-box">
+        <strong>Elon Musk</strong>
+        <p>"An insightful and engaging book, loved it!"</p>
+    </div>
+</div>
+<div class="review-form">
+    <h3>Leave a Review</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="review">Review:</label>
+        <textarea id="review" rows="4" placeholder="Write your review here..." required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</section>
+<div class = "footer">
+<p class = "note">@ 2025 MyBookShelf</p>
+<a href="https://twitter.com">twitter</a>
+<br>
+<a href="https://instagram.com">instagram</a>
+<br>
+<a href="#home">Click Here To Go To Top</a>
+</div>
+</body>
+</html>
